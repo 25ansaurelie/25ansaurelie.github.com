@@ -1,6 +1,65 @@
+<!doctype html>
 <html>
     <head>
-        <title>Invitation 25 ans d'Aur%eacutes;lie</title>
+        <title>Invitation 25 ans d'Aur&eacutes;lie</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="Site pour l'anniversaire des 25 ans d'Aur&eacutes;lie Delbrouck">
+        <meta name="author" content="Benoît Suttor">
+
+        <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+            /* Prevent the slideshow from flashing on load */
+            #slides {
+                display: none
+            }
+
+            /* Center the slideshow */
+            .container {
+                margin: 0 auto
+            }
+
+            /* Show active item in the pagination */
+            .slidesjs-pagination .active {
+                color:red;
+            }
+
+            /* Media quires for a responsive layout */
+
+            /* For tablets & smart phones */
+            @media (max-width: 767px) {
+            body {
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+            .container {
+            width: auto
+            }
+            }
+
+            /* For smartphones */
+            @media (max-width: 480px) {
+            .container {
+            width: auto
+            }
+            }
+
+            /* For smaller displays like laptops */
+            @media (min-width: 768px) and (max-width: 979px) {
+            .container {
+            width: 724px
+            }
+            }
+
+            /* For larger displays */
+            @media (min-width: 1200px) {
+            .container {
+            width: 1170px
+            }
+            }
+        </style>
         <style>
             /* Prevents slides from flashing */
             #slides {
@@ -21,10 +80,11 @@
         </script>
     </head>
     <body>
-        <div id="slides">
-
-            <img src="invite.jpg" />
-            <img src="invite.jpg" />
+        <div class="container">
+            <div id="slides">
+                <img src="invite.jpg" />
+                <img src="invite.jpg" />
+            </div>
         </div>
     </body>
 </html>
