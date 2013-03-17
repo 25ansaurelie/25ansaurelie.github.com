@@ -1,9 +1,30 @@
 <html>
     <head>
         <title>Invitation 25 ans d'Aur%eacutes;lie</title>
+        <style>
+            /* Prevents slides from flashing */
+            #slides {
+                display:none;
+            }
+        </style>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/jquery.slides.min.js"></script>
+
+        <script>
+            $(function(){
+                $("#slides").slidesjs({
+                    width: 940,
+                    height: 528
+                });
+            });
+        </script>
     </head>
     <body>
-        <a href="."> suivante </a>
-        <img src="invite.jpg" />
+        <div id="slides">
+
+            <img src="invite.jpg" />
+            <img src="invite.jpg" />
+        </div>
     </body>
 </html>
